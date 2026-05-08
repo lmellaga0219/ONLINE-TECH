@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Photoshop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="foreal.css">
+</head>
+<body>
+    <!-- Background video — swap bg-video.mp4 with your own file -->
+    <div class="bg-video-wrap" aria-hidden="true">
+        <video
+            class="bg-video"
+            src="background.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+            disablepictureinpicture
+            preload="auto"
+        ></video>
+        <!-- Overlay darkens/tints the video so content stays readable -->
+        <div class="bg-video-overlay"></div>
+    </div>
+
+    <nav>
+        <div class="logo">PS<span>code</span></div>
+        <ul class="nav-links">
+            <li><a href="#tutorials">Tutorials</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <ul>
+            <li><a href="#tutorials" class="menu-link">Tutorials</a></li>
+            <li><a href="about.html" class="menu-link">About</a></li>
+            <li><a href="contact.html" class="menu-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <section class="hero" id="home">
+
+        <!-- ── HERO TEXT ─────────────────────────── -->
+        <div class="hero-content">
+            <h1>Learn <span>Photoshop</span> From Scratch</h1>
+            <p>Start your creative journey with Adobe Photoshop by learning the basics of photo editing and design. This site is made for beginners who want to understand essential tools, simple techniques, and how to create visually appealing projects with ease.</p>
+            <a href="#tutorials" class="cta-btn">Start Learning</a>
+        </div>
+
+        <!-- ── HERO IMAGE ─────────────────────────── -->
+        <div class="hero-image">
+            <img src="ps.png" alt="Adobe Photoshop interface preview">
+        </div>
+
+    </section>
+
+    <section class="tutorials" id="tutorials">
+        <div class="section-header">
+            <h2>Latest <span>Tutorials</span></h2>
+            <p>Explore our collection of tutorials covering everything from basic tools to advanced techniques.</p>
+        </div>
+        <div class="tutorials-grid">
+
+            <a href="lesson1.html" class="tutorial-card">
+                <img src="WHAT.png" alt="What is Photoshop" class="tutorial-image">
+                <div class="tutorial-content">
+                    <span class="tutorial-tag">Lesson 1</span>
+                    <h3>What is Photoshop?</h3>
+                    <p>Learn what Adobe Photoshop is and how it's used to edit photos and create designs. A quick intro for beginners starting out in digital design.</p>
+                </div>
+            </a>
+
+            <a href="lesson2.html" class="tutorial-card">
+                <img src="INTERFACE.png" alt="Interface & Navigation" class="tutorial-image">
+                <div class="tutorial-content">
+                    <span class="tutorial-tag">Lesson 2</span>
+                    <h3>Interface & Navigation</h3>
+                    <p>Get comfortable inside Adobe Photoshop. Learn how to move around the workspace, manage panels, and save your projects with ease.</p>
+                </div>
+            </a>
+
+            <a href="lesson3.html" class="tutorial-card">
+                <img src="TOOLS.png" alt="Basic Tools" class="tutorial-image">
+                <div class="tutorial-content">
+                    <span class="tutorial-tag">Lesson 3</span>
+                    <h3>Basic Tools</h3>
+                    <p>Start creating using essential tools like move, brush, crop, and selection tools—your foundation for every design.</p>
+                </div>
+            </a>
+
+            <a href="lesson4.html" class="tutorial-card">
+                <img src="BRUSH.png" alt="Colors & Brushes" class="tutorial-image">
+                <div class="tutorial-content">
+                    <span class="tutorial-tag">Lesson 4</span>
+                    <h3>Colors & Brushes</h3>
+                    <p>Bring your ideas to life with colors and custom brushes. Control size, opacity, and flow for better creativity.</p>
+                </div>
+            </a>
+
+            <a href="lesson5.html" class="tutorial-card">
+                <img src="LAYERS.png" alt="Layers" class="tutorial-image">
+                <div class="tutorial-content">
+                    <span class="tutorial-tag">Lesson 5</span>
+                    <h3>Layers</h3>
+                    <p>Build your design step by step. Organize, stack, and edit elements without affecting the whole image.</p>
+                </div>
+            </a>
+
+            <a href="lesson6.html" class="tutorial-card">
+                <img src="MASK.png" alt="Selections & Masks" class="tutorial-image">
+                <div class="tutorial-content">
+                    <span class="tutorial-tag">Lesson 6</span>
+                    <h3>Selections & Masks</h3>
+                    <p>Edit smarter by selecting specific areas and using masks to hide or reveal parts without deleting anything.</p>
+                </div>
+            </a>
+
+            <a href="lesson7.html" class="tutorial-card">
+                <img src="TEXT.png" alt="Text & Shapes" class="tutorial-image">
+                <div class="tutorial-content">
+                    <span class="tutorial-tag">Lesson 7</span>
+                    <h3>Text & Shapes</h3>
+                    <p>Design posters and pub mats using text and shapes. Learn how to style and arrange elements cleanly.</p>
+                </div>
+            </a>
+
+            <a href="lesson8.html" class="tutorial-card">
+                <img src="SMART.png" alt="Smart Objects" class="tutorial-image">
+                <div class="tutorial-content">
+                    <span class="tutorial-tag">Lesson 8</span>
+                    <h3>Smart Objects</h3>
+                    <p>Edit and resize images without losing quality—perfect for flexible designs.</p>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

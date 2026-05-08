@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — PScode</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="foreal.css">
+</head>
+<body>
+
+    <div class="bg-video-wrap" aria-hidden="true">
+        <video
+            class="bg-video"
+            src="background.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+            disablepictureinpicture
+            preload="auto"
+        ></video>
+        <div class="bg-video-overlay"></div>
+    </div>
+
+    <nav>
+        <a href="index.html" class="logo">PS<span>code</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html#tutorials">Tutorials</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="nav-active">Contact</a></li>
+        </ul>
+        <div class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <ul>
+            <li><a href="index.html" class="menu-link">Tutorials</a></li>
+            <li><a href="about.html" class="menu-link">About</a></li>
+            <li><a href="contact.html" class="menu-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- ── CONTACT PAGE ───────────────────────────────────── -->
+    <main class="contact-page">
+
+        <div class="contact-wrap">
+
+            <!-- Heading -->
+            <div class="contact-heading">
+                <h1>Let's <span>Chat</span></h1>
+                <div class="contact-dot"></div>
+            </div>
+
+            <!-- Email pill (non-clickable) -->
+            <div class="contact-email-pill">
+                <span class="contact-email-icon">
+                    <img src="gmail.png" alt="Email">
+                </span>
+                lmellaga0219@gmail.com
+            </div>
+
+            <!-- CTA button -->
+            <a href="mailto:lmellaga0219@gmail.com" class="contact-cta-btn">Get in touch</a>
+
+            <!-- Social icon buttons -->
+            <div class="contact-socials">
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/ley-ellaga-3abb8a371/" target="_blank" rel="noopener noreferrer" class="contact-social-icon" aria-label="LinkedIn">
+                    <img src="linkedin.png" alt="LinkedIn">
+                </a>
+
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/aleydrei/" target="_blank" rel="noopener noreferrer" class="contact-social-icon" aria-label="Facebook">
+                    <img src="facebook.png" alt="Facebook">
+                </a>
+
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/aley_drei/" target="_blank" rel="noopener noreferrer" class="contact-social-icon" aria-label="Instagram">
+                    <img src="instagram.png" alt="Instagram">
+                </a>
+
+                <!-- GitHub -->
+                <a href="https://github.com/lmellaga0219" target="_blank" rel="noopener noreferrer" class="contact-social-icon" aria-label="GitHub">
+                    <img src="github.png" alt="GitHub">
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+   
+</body>
+</html>
