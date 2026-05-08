@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layers</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="foreal.css">
+    <link rel="stylesheet" href="lesson.css">
+</head>
+<body>
+    <div class="bg-video-wrap" aria-hidden="true">
+        <video
+            class="bg-video"
+            src="background.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+            disablepictureinpicture
+            preload="auto"
+        ></video>
+        <div class="bg-video-overlay"></div>
+    </div>
+    <nav>
+        <a href="index.html" class="logo">PS<span>code</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html#tutorials" class="menu-link">Tutorials</a></li>
+            <li><a href="about.html" class="menu-link">About</a></li>
+            <li><a href="contact.html" class="menu-link">Contact</a></li>
+        </ul>
+        <div class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <ul>
+            <li><a href="index.html#tutorials" class="menu-link">Tutorials</a></li>
+            <li><a href="about.html" class="menu-link">About</a></li>
+            <li><a href="contact.html" class="menu-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="lesson-wrapper">
+
+        <main class="lesson-main">
+
+            <div class="lesson-breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="breadcrumb-sep">›</span>
+                <a href="index.html#tutorials">Tutorials</a>
+                <span class="breadcrumb-sep">›</span>
+                <span>Layers</span>
+            </div>
+
+            <div class="lesson-header">
+                <span class="tutorial-tag">Lesson 5</span>
+                <h1><span>Layers</span></h1>
+                <p class="lesson-subtitle">Build your design step by step. Organize, stack, and edit elements without affecting the whole image.</p>
+            </div>
+
+            <div class="lesson-hero-img">
+                <img src="LAYERS.png" alt="Layers">
+            </div>
+
+            <article class="lesson-body">
+                <section class="lesson-section"><h2>What Are Layers?</h2><p>Layers are one of the most fundamental concepts in Photoshop. Think of them as transparent sheets stacked on top of each other — each layer can hold different content like images, text, shapes, or adjustments, and you can edit each one independently without affecting the others.</p></section>
+                <section class="lesson-section"><h2>The Layers Panel</h2><p>The <strong>Layers Panel</strong> (Window → Layers) shows all your layers in a stack. The layer at the top of the list appears in front of layers below it. You can:</p><ul class='lesson-list'><li>Click a layer to select and edit it</li><li>Drag layers to reorder them</li><li>Click the eye icon to show or hide a layer</li><li>Double-click a layer name to rename it</li><li>Click the lock icon to prevent accidental edits</li></ul></section>
+                <div class="lesson-callout"><span class="callout-icon">💡</span><p><strong>Tip:</strong> Use descriptive names for your layers. Organized layers save a huge amount of time on complex projects.</p></div>
+                <section class="lesson-section"><h2>Creating & Managing Layers</h2><p>Create a new blank layer with <strong>Ctrl+Shift+N</strong> (Cmd+Shift+N). Duplicate a layer by pressing <strong>Ctrl+J</strong> (Cmd+J) — this is one of the most-used shortcuts in Photoshop. Delete a layer by selecting it and pressing the trash icon in the Layers Panel.</p></section>
+                <section class="lesson-section"><h2>Layer Groups & Blending Modes</h2><p>Group related layers together using <strong>Ctrl+G</strong> (Cmd+G) to keep your panel tidy. You can also change a layer's <strong>Blending Mode</strong> (the dropdown at the top of the Layers Panel) to control how it interacts with the layers below — modes like Multiply, Screen, and Overlay are used constantly in photo editing.</p></section>
+                <div class="lesson-callout lesson-callout--warn"><span class="callout-icon">⚠️</span><p><strong>Important:</strong> Never edit the original image layer directly. Duplicate it first (Ctrl+J) so you always have a backup.</p></div>
+            </article>
+
+            <div class="lesson-nav-btns">
+                <a href="lesson4.html" class="lesson-nav-btn">
+                    <span class="nav-btn-label">Previous</span>
+                    <span class="nav-btn-title">← Colors & Brushes</span>
+                </a>
+                <a href="lesson6.html" class="lesson-nav-btn">
+                    <span class="nav-btn-label">Next Lesson</span>
+                    <span class="nav-btn-title">Selections & Masks →</span>
+                </a>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

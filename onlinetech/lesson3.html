@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Tools</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="foreal.css">
+    <link rel="stylesheet" href="lesson.css">
+</head>
+<body>
+    <div class="bg-video-wrap" aria-hidden="true">
+        <video
+            class="bg-video"
+            src="background.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+            disablepictureinpicture
+            preload="auto"
+        ></video>
+        <div class="bg-video-overlay"></div>
+    </div>
+    <nav>
+        <a href="index.html" class="logo">PS<span>code</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html#tutorials" class="menu-link">Tutorials</a></li>
+            <li><a href="about.html" class="menu-link">About</a></li>
+            <li><a href="contact.html" class="menu-link">Contact</a></li>
+        </ul>
+        <div class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <ul>
+            <li><a href="index.html#tutorials" class="menu-link">Tutorials</a></li>
+            <li><a href="about.html" class="menu-link">About</a></li>
+            <li><a href="contact.html" class="menu-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="lesson-wrapper">
+
+        <main class="lesson-main">
+
+            <div class="lesson-breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="breadcrumb-sep">›</span>
+                <a href="index.html#tutorials">Tutorials</a>
+                <span class="breadcrumb-sep">›</span>
+                <span>Basic Tools</span>
+            </div>
+
+            <div class="lesson-header">
+                <span class="tutorial-tag">Lesson 3</span>
+                <h1>Basic <span>Tools</span></h1>
+                <p class="lesson-subtitle">Start creating using essential tools like move, brush, crop, and selection tools — your foundation for every design.</p>
+            </div>
+
+            <div class="lesson-hero-img">
+                <img src="TOOLS.png" alt="Basic Tools">
+            </div>
+
+            <article class="lesson-body">
+                <section class="lesson-section"><h2>The Toolbox</h2><p>The Toolbox is a vertical panel on the left side of the screen. It contains all of Photoshop's core tools, organized by category. You can access any tool by clicking it, or press its keyboard shortcut for faster switching.</p></section>
+                <section class="lesson-section"><h2>Essential Tools to Know</h2><ul class='lesson-list'><li><strong>Move Tool (V)</strong> — Moves layers or selected content around the canvas</li><li><strong>Rectangular Marquee (M)</strong> — Selects a rectangular area of the image</li><li><strong>Lasso Tool (L)</strong> — Draws freehand selections</li><li><strong>Crop Tool (C)</strong> — Trims the canvas to a specific size or ratio</li><li><strong>Brush Tool (B)</strong> — Paints on the canvas with customizable brushes</li><li><strong>Eraser Tool (E)</strong> — Removes pixels from a layer</li><li><strong>Zoom Tool (Z)</strong> — Zooms in and out of the canvas</li></ul></section>
+                <div class="lesson-callout"><span class="callout-icon">💡</span><p><strong>Shortcut tip:</strong> Press and hold a tool's shortcut key to temporarily switch to it, then release to go back to your previous tool.</p></div>
+                <section class="lesson-section"><h2>Using the Move Tool</h2><p>The Move Tool is one of the most used tools in Photoshop. Select it by pressing <strong>V</strong>, then click and drag any layer to reposition it. With the Auto-Select option enabled in the Options Bar, clicking directly on an object automatically selects its layer.</p></section>
+                <section class="lesson-section"><h2>Cropping Your Canvas</h2><p>The Crop Tool lets you resize your canvas by dragging handles around the image. You can set a fixed ratio (like 1:1 for a square) or enter custom dimensions in the Options Bar. Press <strong>Enter</strong> to apply the crop, or <strong>Escape</strong> to cancel.</p></section>
+                <div class="lesson-callout lesson-callout--warn"><span class="callout-icon">⚠️</span><p><strong>Watch out:</strong> The Eraser Tool permanently removes pixels. Use a Layer Mask instead if you want a non-destructive workflow.</p></div>
+            </article>
+
+            <div class="lesson-nav-btns">
+                <a href="lesson2.html" class="lesson-nav-btn">
+                    <span class="nav-btn-label">Previous</span>
+                    <span class="nav-btn-title">← Interface & Navigation</span>
+                </a>
+                <a href="lesson4.html" class="lesson-nav-btn">
+                    <span class="nav-btn-label">Next Lesson</span>
+                    <span class="nav-btn-title">Colors & Brushes →</span>
+                </a>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

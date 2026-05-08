@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selections & Masks</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="foreal.css">
+    <link rel="stylesheet" href="lesson.css">
+</head>
+<body>
+    <div class="bg-video-wrap" aria-hidden="true">
+        <video
+            class="bg-video"
+            src="background.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+            disablepictureinpicture
+            preload="auto"
+        ></video>
+        <div class="bg-video-overlay"></div>
+    </div>
+    <nav>
+        <a href="index.html" class="logo">PS<span>code</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html#tutorials" class="menu-link">Tutorials</a></li>
+            <li><a href="about.html" class="menu-link">About</a></li>
+            <li><a href="contact.html" class="menu-link">Contact</a></li>
+        </ul>
+        <div class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <ul>
+            <li><a href="index.html#tutorials" class="menu-link">Tutorials</a></li>
+            <li><a href="about.html" class="menu-link">About</a></li>
+            <li><a href="contact.html" class="menu-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="lesson-wrapper">
+
+        <main class="lesson-main">
+
+            <div class="lesson-breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="breadcrumb-sep">›</span>
+                <a href="index.html#tutorials">Tutorials</a>
+                <span class="breadcrumb-sep">›</span>
+                <span>Selections & Masks</span>
+            </div>
+
+            <div class="lesson-header">
+                <span class="tutorial-tag">Lesson 6</span>
+                <h1>Selections & <span>Masks</span></h1>
+                <p class="lesson-subtitle">Edit smarter by selecting specific areas and using masks to hide or reveal parts without deleting anything.</p>
+            </div>
+
+            <div class="lesson-hero-img">
+                <img src="MASK.png" alt="Selections and Masks">
+            </div>
+
+            <article class="lesson-body">
+                <section class="lesson-section"><h2>Why Selections Matter</h2><p>A selection lets you isolate a specific part of your image so that any edits only apply to that area. Without selections, every change you make affects the entire layer. Mastering selections is key to precise, professional editing.</p></section>
+                <section class="lesson-section"><h2>Selection Tools</h2><ul class='lesson-list'><li><strong>Rectangular & Elliptical Marquee (M)</strong> — Select geometric shapes</li><li><strong>Lasso Tool (L)</strong> — Freehand selection by drawing around an object</li><li><strong>Polygonal Lasso</strong> — Click to create straight-edged selections</li><li><strong>Magic Wand (W)</strong> — Selects areas of similar color with one click</li><li><strong>Quick Selection (W)</strong> — Brush over an area to intelligently select it</li><li><strong>Object Select Tool</strong> — AI-powered selection of entire objects</li></ul></section>
+                <div class="lesson-callout"><span class="callout-icon">💡</span><p><strong>Tip:</strong> After making a selection, go to Select → Modify → Feather to soften the edges for a more natural look.</p></div>
+                <section class="lesson-section"><h2>What Are Layer Masks?</h2><p>A <strong>Layer Mask</strong> is a grayscale image attached to a layer that controls its visibility. <strong>White areas</strong> on the mask reveal the layer, <strong>black areas</strong> hide it, and <strong>gray areas</strong> make it partially transparent. The key advantage: nothing is permanently deleted — you can always paint back what you hid.</p></section>
+                <section class="lesson-section"><h2>Adding a Layer Mask</h2><p>Select the layer you want to mask, then click the <strong>Add Layer Mask</strong> button (rectangle with a circle) at the bottom of the Layers Panel. Paint on the mask with a black brush to hide parts of the layer, or white to reveal them. Press <strong>Alt/Option + click</strong> the mask thumbnail to view the mask directly.</p></section>
+                <div class="lesson-callout lesson-callout--warn"><span class="callout-icon">⚠️</span><p><strong>Non-destructive rule:</strong> Always use Layer Masks instead of the Eraser Tool. Masks let you undo any hiding at any time.</p></div>
+            </article>
+
+            <div class="lesson-nav-btns">
+                <a href="lesson5.html" class="lesson-nav-btn">
+                    <span class="nav-btn-label">Previous</span>
+                    <span class="nav-btn-title">← Layers</span>
+                </a>
+                <a href="lesson7.html" class="lesson-nav-btn">
+                    <span class="nav-btn-label">Next Lesson</span>
+                    <span class="nav-btn-title">Text & Shapes →</span>
+                </a>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

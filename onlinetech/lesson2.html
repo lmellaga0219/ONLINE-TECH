@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface & Navigation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="foreal.css">
+    <link rel="stylesheet" href="lesson.css">
+</head>
+<body>
+    <div class="bg-video-wrap" aria-hidden="true">
+        <video
+            class="bg-video"
+            src="background.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+            disablepictureinpicture
+            preload="auto"
+        ></video>
+        <div class="bg-video-overlay"></div>
+    </div>
+    <nav>
+        <a href="index.html" class="logo">PS<span>code</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html#tutorials" class="menu-link">Tutorials</a></li>
+            <li><a href="about.html" class="menu-link">About</a></li>
+            <li><a href="contact.html" class="menu-link">Contact</a></li>
+        </ul>
+        <div class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <ul>
+            <li><a href="index.html#tutorials" class="menu-link">Tutorials</a></li>
+            <li><a href="about.html" class="menu-link">About</a></li>
+            <li><a href="contact.html" class="menu-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="lesson-wrapper">
+
+        <main class="lesson-main">
+
+            <div class="lesson-breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="breadcrumb-sep">›</span>
+                <a href="index.html#tutorials">Tutorials</a>
+                <span class="breadcrumb-sep">›</span>
+                <span>Interface & Navigation</span>
+            </div>
+
+            <div class="lesson-header">
+                <span class="tutorial-tag">Lesson 2</span>
+                <h1>Interface & <span>Navigation</span></h1>
+                <p class="lesson-subtitle">Get comfortable inside Adobe Photoshop. Learn how to move around the workspace, manage panels, and save your projects with ease.</p>
+            </div>
+
+            <div class="lesson-hero-img">
+                <img src="INTERFACE.png" alt="Interface and Navigation">
+            </div>
+
+            <article class="lesson-body">
+                <section class="lesson-section"><h2>The Photoshop Workspace</h2><p>When you first open Photoshop, you'll see a layout made up of several key areas: the <strong>Menu Bar</strong> at the top, the <strong>Options Bar</strong> just below it, the <strong>Toolbox</strong> on the left, and various <strong>Panels</strong> on the right. In the center is your <strong>Canvas</strong> — where all your creative work happens.</p><p>Understanding where everything lives is the first step to working efficiently in Photoshop.</p></section>
+                <section class="lesson-section"><h2>Key Interface Areas</h2><ul class='lesson-list'><li><strong>Menu Bar</strong> — Access all commands like File, Edit, Image, Layer, and more</li><li><strong>Options Bar</strong> — Shows settings for whichever tool is currently selected</li><li><strong>Toolbox</strong> — Your main toolkit: selection, painting, retouching, and more</li><li><strong>Panels</strong> — Layers, Properties, History, Color, and other controls</li><li><strong>Canvas</strong> — Your working area where the image is displayed</li></ul></section>
+                <div class="lesson-callout"><span class="callout-icon">💡</span><p><strong>Pro tip:</strong> You can reset your workspace to the default layout anytime via Window → Workspace → Reset Essentials.</p></div>
+                <section class="lesson-section"><h2>Navigating the Canvas</h2><p>Use the <strong>Hand Tool (H)</strong> to pan around your canvas, and the <strong>Zoom Tool (Z)</strong> to zoom in or out. You can also hold <strong>Alt/Option + scroll wheel</strong> to zoom quickly without switching tools. To fit the entire image in view, press <strong>Ctrl+0</strong> (Cmd+0 on Mac).</p></section>
+                <section class="lesson-section"><h2>Saving Your Work</h2><p>Photoshop uses its own file format, <strong>.PSD</strong>, which preserves all your layers and edits. Always save in PSD while working. When you're ready to export, use <strong>File → Export → Export As</strong> to save as JPG, PNG, or another web-friendly format.</p></section>
+                <div class="lesson-callout lesson-callout--warn"><span class="callout-icon">⚠️</span><p><strong>Important:</strong> Save your work frequently with Ctrl+S (Cmd+S). Photoshop does not auto-save by default.</p></div>
+            </article>
+
+            <div class="lesson-nav-btns">
+                <a href="lesson1.html" class="lesson-nav-btn">
+                    <span class="nav-btn-label">Previous</span>
+                    <span class="nav-btn-title">← What is Photoshop?</span>
+                </a>
+                <a href="lesson3.html" class="lesson-nav-btn">
+                    <span class="nav-btn-label">Next Lesson</span>
+                    <span class="nav-btn-title">Basic Tools →</span>
+                </a>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
