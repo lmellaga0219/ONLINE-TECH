@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About — PScode</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="foreal.css">
+</head>
+<body>
+
+    <!-- Background -->
+    <div class="bg-video-wrap" aria-hidden="true">
+        <video
+            class="bg-video"
+            src="background.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+            disablepictureinpicture
+            preload="auto"
+        ></video>
+        <div class="bg-video-overlay"></div>
+    </div>
+
+    <nav>
+        <a href="index.html" class="logo">PS<span>code</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html" class="menu-link">Tutorials</a></li>
+            <li><a href="about.html" class="menu-link">About</a></li>
+            <li><a href="contact.html" class="menu-link">Contact</a></li>
+        </ul>
+        <div class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <ul>
+            <li><a href="index.html" class="menu-link">Tutorials</a></li>
+            <li><a href="about.html" class="menu-link">About</a></li>
+            <li><a href="contact.html" class="menu-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- ABOUT -->
+    <main class="about-page">
+
+        <!-- Profile -->
+        <div class="about-card">
+
+            <!-- Avatar -->
+            <div class="about-avatar-wrap">
+                <!-- Replace with your image file -->
+                <img
+                    src="mypyc.png"
+                    alt="Ley Andrei Ellaga"
+                    class="about-avatar"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                >
+                <!-- Placeholder -->
+                <div class="about-avatar-placeholder" style="display:none;">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Identity -->
+            <div class="about-identity">
+                <p class="about-label">Creator & Developer</p>
+                <h1 class="about-name">Ley Andrei Ellaga</h1>
+                <div class="about-divider"></div>
+            </div>
+
+            <!-- Bio -->
+            <div class="about-bio">
+                <p>I built this platform to help beginner users understand and navigate the basics of Adobe Photoshop in a simple and easy way. </p>
+                <p>This website was created to serve as a beginner-friendly guide for learning essential Photoshop tools, functions, and techniques. Whether you are new to editing, digital art, or graphic design, this site aims to provide clear instructions and helpful information that can improve your skills step by step.</p>
+                <p>My goal is to make learning Photoshop less confusing and more accessible for everyone. Through tutorials, guides, and practical examples, users can explore the fundamentals of photo editing and design with confidence.</p>
+                <p class="about-sign-off">Thank you for visiting, and I hope this website helps you in your creative journey!</p>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
